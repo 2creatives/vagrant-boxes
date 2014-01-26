@@ -1,0 +1,20 @@
+---
+layout: box
+
+box-creation-date: 2013-12-02
+box-name: centos65-x86_64-20131202
+box-url: https://github.com/2creatives/vagrant-centos/releases/download/v6.5.0/centos65-x86_64-20131202.box
+box-size: 329861472
+box-provider: VirtualBox
+box-maintained-at: https://github.com/2creatives/vagrant-centos
+box-drivers-version: 4.3.2
+box-sha256: a4407f618565858375730bdc5a33bc3708ff4ebfd56b30e701ec240bd4821093
+
+os-arch: x86_64
+os-family: linux
+os-name: CentOS
+os-version: 6.5
+---
+
+This box comes without any provisioning software beyond the shell
+but it does include development tools such as `gcc`, `make`, etc.

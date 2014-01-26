@@ -1,0 +1,3 @@
+name: Vagrant Boxes
+markdown: redcarpet
+baseurl: /vagrant-boxes

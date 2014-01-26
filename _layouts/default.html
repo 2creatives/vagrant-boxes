@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="{{ site.baseurl}}/css/main.css">
+</head>
+
+<body>
+  <header>
+    <h1>{{ site.name }}</h1>
+  </header>
+
+  <nav></nav>
+
+  <section class="">
+    {{ content }}
+  </section>
+
+  <aside id="github-ribbon">
+    <a href="https://github.com/2creatives/vagrant-boxes">
+      <img src="{{ site.baseurl }}/img/forkme_right_red_aa0000.png"
+          alt="Fork me on GitHub">
+    </a>
+  </aside>
+
+  <footer>
+    <header>
+      <h2>What’s wrong with <a href="http://www.vagrantbox.es/">vagrantbox.es</a>?</h2>
+    </header>
+
+    <p>
+      Nothing! I’m a big fan of that project. However, they seem
+      to be going through some scaling issues with the number of
+      pull requests that they receive. They’re a little slow at
+      integrating them back in and I wonder if it’s because
+      everyone is editing a single HTML file.
+    </p>
+
+    <p>
+      This approach aims to separate more of the data from the
+      presentation by “creatively” using the Jekyll post system.
+    </p>
+
+    <p>
+      Hopefully upstream will like the approach and integrate it
+      back in. :)
+    </p>
+  </footer>
+</body>
+
+</html>

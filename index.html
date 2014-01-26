@@ -1,0 +1,36 @@
+---
+layout: default
+title: Vagrant Boxes
+---
+
+
+<p>
+  Here are a list of base boxes which can use to structure your <a
+  href="http://www.vagrantup.com/">Vagrant</a> project on. They
+  are listed as a convenience; please do not trust these boxes.
+</p>
+<p>
+  Please feel free to submit your own base boxes through a <a
+  href="https://github.com/2creatives/vagrant-boxes/pulls">pull
+  request</a> on GitHub.
+</p>
+
+<header>
+  <h2>Latest Vagrant Boxes</h2>
+</header>
+
+{% for post in site.posts %}
+  <article class="box">
+    <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.os-name }}
+        {{ post.os-version }}
+        {{ post.os-arch }}
+      </a>
+      Provider: {{ post.box-provider }} w/ drivers {{ post.box-drivers-version }}
+      Size: {{ post.box-size | divided_by: 1048576 }} MiB
+      <a href="{{ post.box-maintained-at }}">Project Page</a><br>
+
+      <pre>SHA256 {{ post.box-sha256 }}</pre>
+      <pre>vagrant init {{ post.box-name }} {{ post.box-url }}</pre>
+    </article>
+{% endfor %}
